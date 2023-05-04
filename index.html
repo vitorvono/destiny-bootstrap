@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./libs/bootstrap.min.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="shortcut icon" href="./images/d2icon.png" type="image/x-icon" />
+    <title>Destiny - Homenagem</title>
+  </head>
+
+  <body>
+    <header id="header-classes" class="p-3">
+      <div class="navbar navbar-expand-lg">
+        <div class="container">
+          <h1 class="text-white">D E S T I N Y</h1>
+          <button
+            type="button"
+            class="navbar-toggler navbar-dark"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu-nav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <nav
+            class="collapse navbar-collapse justify-content-end"
+            id="menu-nav"
+          >
+            <ul class="nav nav-pills navbar-nav">
+              <li class="nav-item">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a href="#classes" class="nav-link">Classes</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">Contato</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="#header-classes">
+      <div id="inicio">
+        <div
+          id="carousel-filme"
+          class="carousel carousel-fade slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+              <picture>
+                <source
+                  srcset="./images/capa-mobile/titanmobile.jpg"
+                  media="(max-width:600px)"
+                />
+                <img
+                  class="d-block w-100"
+                  src="./images/titantitle.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="carousel-caption">
+                <h2>Titan</h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <picture>
+                <source
+                  srcset="./images/capa-mobile/warlockmobile.jpeg"
+                  media="(max-width:600px)"
+                />
+                <img
+                  class="d-block w-100"
+                  src="./images/warlocktitle.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="carousel-caption">
+                <h2>Arcano</h2>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <picture>
+                <source
+                  srcset="./images/capa-mobile/huntermobile.jpg"
+                  media="(max-width:600px)"
+                />
+                <img
+                  class="d-block w-100"
+                  src="./images/huntertitle.jpg"
+                  alt=""
+                />
+              </picture>
+              <div class="carousel-caption">
+                <h2>Caçador</h2>
+              </div>
+            </div>
+          </div>
+
+          <button
+            data-bs-target="#carousel-filme"
+            data-bs-slide="prev"
+            class="carousel-control-prev"
+            type="button"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            data-bs-target="#carousel-filme"
+            data-bs-slide="next"
+            class="carousel-control-next"
+            type="button"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+
+          <footer class="carousel-indicators">
+            <button
+              class="active"
+              type="button"
+              data-bs-target="#carousel-filme"
+              data-bs-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-filme"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-filme"
+              data-bs-slide-to="2"
+            ></button>
+          </footer>
+        </div>
+      </div>
+
+      <section id="classes" class="container">
+        <h2 class="pb-4">Classes</h2>
+        <main class="row">
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Arcano - Lamína da Luz</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/warlock2.jpg" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Caçador - Pistoleiro</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/hunter2.jpg" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Titan - Destruidor Solar</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/titan2.jpg" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Arcano - Condutor</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/warlock1.jpg" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Caçador - Acrobata</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/hunter1.jpg" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+
+          <div class="mb-5 gap-3 col-sm-12 col-md-6 col-lg-4">
+            <div class="card">
+              <header class="card-header text-white">
+                <h3>Titan - Combatente</h3>
+              </header>
+              <main
+                class="card-body d-flex justify-content-center align-content-center"
+              >
+                <img src="./images/classes/titan1.png" alt="" />
+              </main>
+              <footer class="card-footer p-0">
+                <button class="btn p-3 w-100 text-white">Atributos</button>
+              </footer>
+            </div>
+          </div>
+        </main>
+      </section>
+      <section id="about" class="container">
+        <h2>Contato</h2>
+        <form class="row">
+          <div class="form-group col-lg-8 rounded p-3">
+            <label for="email">Digite seu E-mail:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="vono@example.com"
+            />
+            <label for="nome">Digite seu nome:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              placeholder="vono.dev"
+            />
+            <label for="sugestao">Diga-nos sua sugestão</label>
+            <textarea class="form-control" id="sugestao" rows="8"></textarea>
+            <button type="submit" class="btn text-white mt-4">Enviar</button>
+          </div>
+        </form>
+      </section>
+    </div>
+    <footer class="rodape">
+      <div class="container">&copy;vono.dev</div>
+    </footer>
+    <script src="./libs/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
